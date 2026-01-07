@@ -89,8 +89,8 @@ include:
   #   snippet: studio-rpc-usb-uart
   #   cmake-args: -DCONFIG_ZMK_STUDIO=y
   #   artifact-name: k03_left_ruen-ergohaven-zmk
-  # - board: ergohaven
-  #   shield: k03_right
+  - board: ergohaven
+    shield: k03_right
   # - board: ergohaven
   #   shield: k03_qube qube dongle_screen
   #   snippet: studio-rpc-usb-uart
