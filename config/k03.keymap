@@ -6,6 +6,25 @@
 
 / {
     behaviors {
+        skq: sticky_key_with_quick_release {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_KEY_QUICK_RELEASE";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
+        shl: balanced_momentary_layer_tap_sticky {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOMENTARY_LAYER_TAP_STICKY";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <125>;
+            flavor = "balanced";
+            bindings = <&mo>, <&skq>;
+        };
+        
         enc_vol: enc_vol {
             compatible = "zmk,behavior-sensor-rotate";
             label = "ENC_VOL";
