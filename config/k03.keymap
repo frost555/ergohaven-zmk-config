@@ -77,6 +77,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <31 19>;
+        };
+
+        semicolon {
+            bindings = <&kp SEMI>;
+            key-positions = <20 32>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
