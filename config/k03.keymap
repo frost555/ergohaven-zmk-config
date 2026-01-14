@@ -99,6 +99,11 @@
             bindings = <&kp FSLH>;
             key-positions = <32 46>;
         };
+
+        underscore {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <45 46>;
+        };
     };
 
     keymap {
