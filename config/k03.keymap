@@ -28,6 +28,7 @@
 
             hold-trigger-key-positions = <KEYS_R THUMBS>;
             hold-trigger-on-release;
+            hold-while-undecided;
         };
 
         /* 
@@ -83,31 +84,37 @@
         plus {
             bindings = <&kp PLUS>;
             key-positions = <19 31>;
+            require-prior-idle-ms = <150>;
         };
 
         minus {
             bindings = <&kp MINUS>;
             key-positions = <31 45>;
+            require-prior-idle-ms = <150>;
         };
 
         multiply {
             bindings = <&kp KP_MULTIPLY>;
             key-positions = <20 32>;
+            require-prior-idle-ms = <150>;
         };
 
         divide {
             bindings = <&kp FSLH>;
             key-positions = <32 46>;
+            require-prior-idle-ms = <150>;
         };
 
         underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <45 46>;
+            require-prior-idle-ms = <150>;
         };
 
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <16 15>;
+            require-prior-idle-ms = <150>;
         };
     };
 
