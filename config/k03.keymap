@@ -33,7 +33,7 @@
 
         hml2: hml2 {
             compatible = "zmk,behavior-hold-tap";
-            label = "HML";
+            label = "HML2";
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <200>;
