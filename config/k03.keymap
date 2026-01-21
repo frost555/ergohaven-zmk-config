@@ -90,16 +90,6 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
-
-        sk: sk {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SK";
-            bindings = <&kp>;
-            #binding-cells = <1>;
-            release-after-ms = <1000>;
-            quick-release;
-            lazy;
-        };
     };
 
     combos {
