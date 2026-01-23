@@ -78,8 +78,8 @@ include:
   # - board: ergohaven
   #   shield: op36_left_qube
 
-  - board: ergohaven
-    shield: k03_right
+  # - board: ergohaven
+  #  shield: k03_right
 
   - board: ergohaven
     shield: k03_left
