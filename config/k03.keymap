@@ -38,6 +38,7 @@
             #binding-cells = <0>;
             bindings = <&hml LCTRL D>, <&kp D>;
             mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
         };
 
         hml2: hml2 {
