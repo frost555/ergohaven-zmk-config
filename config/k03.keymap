@@ -143,6 +143,16 @@
             require-prior-idle-ms = <150>;
             layers = <0>;
         };
+
+        right {
+            bindings = <&kp RIGHT_ARROW>;
+            key-positions = <16 15>;
+        };
+
+        left {
+            bindings = <&kp LEFT_ARROW>;
+            key-positions = <15 14>;
+        };
     };
 
     keymap {
