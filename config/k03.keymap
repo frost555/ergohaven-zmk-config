@@ -47,7 +47,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "F_MORPH";
             #binding-cells = <0>;
-            bindings = <&hml LCTRL F>, <&kp F>;
+            bindings = <&hml LEFT_SHIFT F>, <&kp F>;
 
             mods = <(MOD_RSFT)>;
             keep-mods = <(MOD_RSFT)>;
