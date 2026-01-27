@@ -139,12 +139,14 @@
 
         right {
             bindings = <&kp RIGHT_ARROW>;
-            key-positions = <40 39>;
+            key-positions = <40 28>;
+            require-prior-idle-ms = <200>;
         };
 
         left {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <39 38>;
+            key-positions = <39 27>;
+            timeout-ms = <200>;
         };
 
         copy {
@@ -168,7 +170,8 @@
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <16 15>;
+            key-positions = <15 14>;
+            require-prior-idle-ms = <200>;
         };
     };
 
