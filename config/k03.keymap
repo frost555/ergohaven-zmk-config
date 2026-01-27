@@ -144,7 +144,7 @@
 
         left {
             bindings = <&kp LEFT_ARROW>;
-            key-positions = <14 26>;
+            key-positions = <27 15>;
         };
 
         copy {
