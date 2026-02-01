@@ -276,7 +276,7 @@
             bindings = <
 &trans  &trans     &trans        &trans            &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &kp QUESTION  &kp GREATER_THAN  &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp EQUAL     &kp SEMI          &kp COLON   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp EQUAL     &kp P             &kp LS(P)   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans        &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                    &trans        &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
