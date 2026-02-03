@@ -185,6 +185,29 @@
         };
     };
 
+    macros {
+        triple_eq: triple_space {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL &kp EQUAL>;
+            label = "TRIPLE_SPACE";
+        };
+
+        double_eq: double_eq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp EQUAL>;
+            label = "DOUBLE_EQ";
+        };
+
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -274,11 +297,11 @@
 
         left_sim {
             bindings = <
-&trans  &trans     &trans        &trans            &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp QUESTION  &kp GREATER_THAN  &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp EQUAL     &kp LS(P)         &kp P       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp HASH      &kp AT            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans        &trans            &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &double_eq  &trans     &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &triple_eq  &arrow     &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp GRAVE  &kp EQUAL   &kp LS(P)  &kp P       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &kp HASH    &trans     &kp AT      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                   &trans      &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
