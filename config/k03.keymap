@@ -297,11 +297,11 @@
 
         left_sim {
             bindings = <
-&trans  &trans     &double_eq  &trans     &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &triple_eq  &arrow     &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp GRAVE  &kp EQUAL   &kp LS(P)  &kp P       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &kp HASH    &trans     &kp AT      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans      &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans     &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &double_eq  &arrow     &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &triple_eq  &kp EQUAL   &kp LS(P)  &kp P       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp HASH    &kp GRAVE  &kp AT      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans      &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
