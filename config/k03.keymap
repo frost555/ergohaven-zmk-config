@@ -129,14 +129,14 @@
             require-prior-idle-ms = <150>;
         };
 
-        multiply {
-            bindings = <&kp KP_MULTIPLY>;
+        colon {
+            bindings = <&kp LS(P)>;
             key-positions = <20 32>;
             require-prior-idle-ms = <150>;
         };
 
-        divide {
-            bindings = <&kp FSLH>;
+        multiply {
+            bindings = <&kp ASTERISK>;
             key-positions = <32 46>;
             require-prior-idle-ms = <150>;
         };
@@ -180,7 +180,7 @@
 
         undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <15 14>;
+            key-positions = <15 16>;
             require-prior-idle-ms = <200>;
         };
     };
@@ -244,11 +244,11 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp MINUS     &kp EQUAL     &kp PLUS      &trans                          &trans     &trans    &kp CARET  &trans    &trans    &trans
-&trans  &trans    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE                       &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
-&trans  &kp BSLH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                        &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
-&trans  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans       &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
-                  &trans        &trans        &kp DOT       &kp N0     &kp COMMA    &trans  &trans     &trans    &trans     &trans
+&trans  &trans    &kp MINUS     &kp EQUAL     &kp PLUS      &trans                        &trans     &trans    &kp CARET  &trans    &trans    &trans
+&trans  &trans    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp GRAVE                     &trans     &kp LBKT  &kp UNDER  &kp RBKT  &trans    &trans
+&trans  &kp BSLH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp PLUS                      &kp PRCNT  &kp LBRC  &kp SEMI   &kp RBRC  &kp EXCL  &trans
+&trans  &trans    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans     &trans     &trans  &trans     &kp PIPE  &kp TILDE  &kp AMPS  &trans    &trans
+                  &trans        &trans        &kp COMMA     &kp N0     &kp DOT    &trans  &trans     &trans    &trans     &trans
             >;
 
             display-name = "Symbols";
@@ -297,11 +297,11 @@
 
         left_sim {
             bindings = <
-&trans  &trans      &trans      &trans     &trans      &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &double_eq  &arrow     &kp DOLLAR  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &triple_eq  &kp EQUAL   &kp LS(P)  &kp P       &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp HASH    &kp GRAVE  &kp AT      &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                    &trans      &trans     &trans      &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &trans      &trans     &kp ASTERISK  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &double_eq  &arrow     &kp DOLLAR    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &triple_eq  &kp EQUAL   &kp LS(P)  &kp P         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans      &kp HASH    &kp GRAVE  &kp AT        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                    &trans      &trans     &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
