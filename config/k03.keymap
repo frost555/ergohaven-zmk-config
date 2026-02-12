@@ -183,6 +183,16 @@
             key-positions = <15 16>;
             require-prior-idle-ms = <200>;
         };
+
+        mult {
+            bindings = <&kp ASTRK>;
+            key-positions = <18 30>;
+        };
+
+        percent {
+            bindings = <&kp PERCENT>;
+            key-positions = <30 44>;
+        };
     };
 
     macros {
