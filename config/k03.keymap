@@ -387,7 +387,7 @@
             bindings = <
 &trans  &trans      &trans      &trans     &kp ASTERISK  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans      &double_eq  &arrow     &kp DOLLAR    &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &triple_eq  &kp EQUAL   &kp LS(P)  &kp P         &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &triple_eq  &kp EQUAL   &kp LS(P)  &kp P         &trans                    &trans  &kp V   &kp Y   &trans  &trans  &trans
 &trans  &trans      &kp HASH    &kp GRAVE  &kp AT        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                     &trans      &trans     &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
