@@ -384,9 +384,9 @@
         graphite {
             bindings = <
 &kp ESC            &kp EXCL  &kp LEFT_GUI      &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base  &kp AMPERSAND       &kp PIPE              &kp LG(LS(D))      &kp LS(PERCENT)  &trans
-&kp CARET          &kp B     &kp L             &kp D             &kp W               &kp Z                                         &kp J     &kp F               &kp O                 &kp U              &kp SEMI         &kp LEFT_BRACKET
+&kp CARET          &kp B     &kp L             &kp D             &kp W               &kp Q                                         &kp J     &kp F               &kp O                 &kp U              &kp SEMI         &kp LEFT_BRACKET
 &kp BACKSPACE      &kp N     &hml2 LEFT_ALT R  &t_morph          &s_morph            &kp G                                         &kp Y     &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL A  &hmr LEFT_ALT E    &kp I            &kp SINGLE_QUOTE
-&skq LEFT_CONTROL  &kp Q     &kp X             &kp M             &kp C               &kp V        &kp DELETE          &kp CAPS     &kp K     &kp P               &kp COMMA             &kp DOT            &kp FSLH         &kp BACKSLASH
+&skq LEFT_CONTROL  &kp Z     &kp X             &kp M             &kp C               &kp V        &kp DELETE          &kp CAPS     &kp K     &kp P               &kp COMMA             &kp DOT            &kp FSLH         &kp BACKSLASH
                              &kp LESS_THAN     &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &sl 6     &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
             >;
 
