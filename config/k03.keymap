@@ -53,6 +53,32 @@
             keep-mods = <(MOD_RSFT)>;
         };
 
+        /* 
+        Graphite Left Middle Finger (was D, now T) 
+        Retains LCTRL home row mod 
+        */
+        t_morph: t_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "T_MORPH";
+            #binding-cells = <0>;
+            bindings = <&hml LCTRL T>, <&kp T>;
+            mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
+        /* 
+        Graphite Left Index Finger (was F, now S) 
+        Retains LEFT_SHIFT home row mod
+        */
+        s_morph: s_morph {
+            compatible = "zmk,behavior-mod-morph";
+            label = "S_MORPH";
+            #binding-cells = <0>;
+            bindings = <&hml LEFT_SHIFT S>, <&kp S>;
+            mods = <(MOD_RSFT)>;
+            keep-mods = <(MOD_RSFT)>;
+        };
+
         hml2: hml2 {
             compatible = "zmk,behavior-hold-tap";
             label = "HML2";
@@ -216,6 +242,33 @@
             bindings = <&kp EQUAL &kp GREATER_THAN>;
             label = "ARROW";
         };
+        /* 
+           Macro: Graphite Switch
+           1. Toggles OS Language (Alt+Shift)
+           2. Switches ZMK Layer to GRAPHITE
+        */
+        to_grp: to_grp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TO_GRAPHITE";
+            bindings
+                = <&kp LA(LSHIFT)>
+                , <&to GRAPHITE>;
+        };
+
+        /* 
+           Macro: Base/QWERTY Switch
+           1. Toggles OS Language (Alt+Shift)
+           2. Switches ZMK Layer to BASE
+        */
+        to_base: to_base {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            label = "TO_BASE";
+            bindings
+                = <&kp LA(LSHIFT)>
+                , <&to BASE>;
+        };
     };
 
     keymap {
@@ -313,6 +366,28 @@
 &trans  &trans      &kp HASH    &kp GRAVE  &kp AT        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                     &trans      &trans     &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
+        };
+
+        graphite {
+        compatible = "zmk,keymap";
+
+        base {
+            bindings = <
+    &kp ESC            &kp EXCL  &kp LEFT_GUI      &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &kp GRAVE  &kp AMPERSAND       &kp PIPE              &kp LG(LS(D))      &kp LS(PERCENT)  &trans
+    &kp CARET          &kp B     &kp L             &kp D             &kp W               &kp Z                                         &kp J      &kp F               &kp O                 &kp U              &kp SEMI         &kp LEFT_BRACKET
+    &kp BACKSPACE      &kp N     &hml2 LEFT_ALT R  &t_morph          &s_morph            &kp G                                         &kp Y      &hmr RIGHT_SHIFT H  &hmr RIGHT_CONTROL A  &hmr LEFT_ALT E    &kp I            &kp SINGLE_QUOTE
+    &skq LEFT_CONTROL  &kp Q     &kp X             &kp M             &kp C               &kp V        &kp DELETE          &kp CAPS     &kp K      &kp P               &kp COMMA             &kp DOT            &kp FSLH         &kp BACKSLASH
+                                &kp LESS_THAN     &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &sl 6      &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+            >;
+
+            display-name = "graphite";
+            sensor-bindings =
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>,
+                <&enc_vol>;
         };
     };
 };
