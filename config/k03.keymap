@@ -309,9 +309,9 @@
         graphite {
             bindings = <
 &kp ESC        &kp EXCL  &kp LEFT_GUI   &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base   &kp AMPERSAND       &kp PIPE          &kp LG(LS(D))      &kp LS(PERCENT)  &trans
-&kp Q          &kp W     &kp G          &kp H             &kp C               &kp K                                         &kp V      &kp L               &kp O             &kp U              &kp Y            &kp Z
-&kp BACKSPACE  &kp D     &kp T          &kp N             &kp S               &kp J                                         &kp X      &kp R               &kp A             &kp E              &kp I            &kp SINGLE_QUOTE
-&trans         &kp B     &kp M          &kp P             &kp F               &kp DOLLAR   &kp DELETE          &kp CAPS     &kp GRAVE  &kp SEMI            &kp COMMA         &kp DOT            &kp FSLH         &trans
+&kp Q          &kp W     &kp G          &kp H             &kp C               &kp K                                         &kp V      &kp L               &kp O             &kp U              &kp SEMI         &kp Z
+&kp BACKSPACE  &kp D     &kp T          &kp N             &kp S               &kp J                                         &kp X      &kp R               &kp A             &kp E              &kp I            &kp Y
+&trans         &kp B     &kp M          &kp P             &kp F               &kp DOLLAR   &kp DELETE          &kp CAPS     &kp GRAVE  &kp SINGLE_QUOTE    &kp COMMA         &kp DOT            &kp SLASH        &trans
                          &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 2 SPACE  &skq RIGHT_SHIFT    &lt 3 ENTER  &sl 7      &lt 6 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
