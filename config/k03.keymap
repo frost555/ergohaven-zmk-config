@@ -267,7 +267,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "TO_GRAPHITE";
-            bindings = <&kp LA(LSHIFT) &to GRAPHITE>;
+            bindings = <&kp LA(LSHIFT) &to 1>;
         };
 
         /* 
@@ -280,7 +280,7 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             label = "TO_BASE";
-            bindings = <&kp LA(LSHIFT) &to BASE>;
+            bindings = <&kp LA(LSHIFT) &to 0>;
         };
     };
 
@@ -293,7 +293,7 @@
 &kp CARET          &kp Q     &kp W             &kp E             &kp R               &kp T                                         &kp Y    &kp U               &kp I                 &kp O              &kp P            &kp LEFT_BRACKET
 &kp BACKSPACE      &kp A     &hml2 LEFT_ALT S  &d_morph          &f_morph            &kp G                                         &kp H    &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr LEFT_ALT L    &kp SEMI         &kp SINGLE_QUOTE
 &skq LEFT_CONTROL  &kp Z     &kp X             &kp C             &kp V               &kp B        &kp DELETE          &kp CAPS     &kp N    &kp M               &kp COMMA             &kp DOT            &kp FSLH         &kp BACKSLASH
-                             &kp LESS_THAN     &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &sl 6    &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+                             &kp LESS_THAN     &kp GREATER_THAN  &kp TAB             &lt 2 SPACE  &skq RIGHT_SHIFT    &lt 3 ENTER  &sl 7    &lt 6 SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
             >;
 
             display-name = "Base";
@@ -306,13 +306,25 @@
                 <&enc_vol>;
         };
 
+        graphite {
+            bindings = <
+&kp ESC        &kp EXCL  &kp LEFT_GUI   &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base  &kp AMPERSAND       &kp PIPE          &kp LG(LS(D))      &kp LS(PERCENT)  &trans
+&kp Q          &kp W     &kp G          &kp H             &kp C               &kp K                                         &kp V     &kp L               &kp O             &kp U              &kp Y            &trans
+&kp BACKSPACE  &kp D     &kp T          &kp N             &kp S               &kp J                                         &kp X     &kp R               &kp A             &kp E              &kp I            &kp SINGLE_QUOTE
+&trans         &kp B     &kp M          &kp P             &kp F               &kp Z        &kp DELETE          &kp CAPS     &kp SEMI  &kp DOT             &kp COMMA         &kp FSLH           &kp MINUS        &trans
+                         &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 2 SPACE  &skq RIGHT_SHIFT    &lt 3 ENTER  &sl 7     &lt 6 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+            >;
+
+            display-name = "graphite";
+        };
+
         nav {
             bindings = <
 &kp F1  &kp F2        &kp F3        &kp F4            &kp F5          &kp F6                     &kp F7    &kp F8          &kp KP_MULTIPLY       &kp F10                &kp F11          &kp F12
 &trans  &trans        &kp HOME      &kp UP            &kp END         &kp INS                    &kp AMPS  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &trans
 &trans  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp RET                    &kp PIPE  &kp LEFT_ARROW  &kp DOWN_ARROW        &kp UP_ARROW           &kp RIGHT_ARROW  &trans
 &trans  &trans        &kp LC(LEFT)  &kp CAPS          &kp LC(RIGHT)   &kp DEL  &trans    &trans  &kp EXCL  &kp HOME        &kp PAGE_DOWN         &kp PAGE_UP            &kp END          &trans
-                      &trans        &trans            &trans          &trans   &trans    &trans  &mo 3     &trans          &trans                &trans
+                      &trans        &trans            &trans          &trans   &trans    &trans  &mo 4     &trans          &trans                &trans
             >;
 
             display-name = "Nav";
@@ -348,7 +360,7 @@
 &kp ENTER  &kp Q             &kp Q   &kp W   &kp E         &kp R                                   &kp Y   &kp U      &kp I      &kp O     &kp P     &kp INSERT
 &kp TAB    &kp LEFT_CONTROL  &kp A   &kp S   &kp D         &kp F                                   &kp H   &kp J      &kp K      &kp L     &kp SEMI  &kp SQT
 &kp ESC    &kp J             &kp Z   &kp X   &kp C         &kp V           &kp B        &to 0      &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-                             &kp T   &kp G   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE    &kp ENTER  &mo 2   &kp RCTRL  &kp RALT   &kp RGUI
+                             &kp T   &kp G   &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE    &kp ENTER  &mo 3   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
             display-name = "Game";
@@ -379,18 +391,6 @@
 &trans  &trans      &kp HASH    &kp GRAVE  &kp AT        &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                     &trans      &trans     &trans        &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
-        };
-
-        graphite {
-            bindings = <
-&kp ESC        &kp EXCL  &kp LEFT_GUI   &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base  &kp AMPERSAND       &kp PIPE          &kp LG(LS(D))      &kp LS(PERCENT)  &trans
-&kp Q          &kp W     &kp G          &kp H             &kp C               &kp K                                         &kp V     &kp L               &kp O             &kp U              &kp Y            &trans
-&kp BACKSPACE  &kp D     &kp T          &kp N             &kp S               &kp J                                         &kp X     &kp R               &kp A             &kp E              &kp I            &kp SINGLE_QUOTE
-&trans         &kp B     &kp M          &kp P             &kp F               &kp Z        &kp DELETE          &kp CAPS     &kp SEMI  &kp DOT             &kp COMMA         &kp FSLH           &kp MINUS        &trans
-                         &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &sl 6     &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-            >;
-
-            display-name = "graphite";
         };
     };
 };
