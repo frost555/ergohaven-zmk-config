@@ -307,12 +307,12 @@
         };
 
         graphite {
-            bindings = <
-&kp ESC        &kp EXCL  &kp LEFT_GUI   &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base   &kp AMPERSAND       &kp PIPE          &kp LG(LS(D))      &kp LS(PERCENT)  &trans
-&kp Q          &kp W     &kp G          &kp H             &kp C               &kp K                                         &kp V      &kp L               &kp O             &kp U              &kp J            &kp Z
-&kp BACKSPACE  &kp D     &kp T          &kp N             &kp S               &kp Y                                         &kp X      &kp R               &kp A             &kp E              &kp I            &trans
-&trans         &kp B     &kp M          &kp P             &kp F               &kp SEMI     &kp DELETE          &kp CAPS     &kp GRAVE  &kp APOSTROPHE      &kp COMMA         &kp DOT            &kp SLASH        &trans
-                         &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 2 SPACE  &skq RIGHT_SHIFT    &lt 3 ENTER  &sl 7      &lt 6 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+        bindings = <
+&kp ESC            &kp EXCL  &kp LEFT_GUI      &kp TAB           &kp LA(LEFT_SHIFT)  &kp F12                                       &to_base  &kp AMPERSAND       &kp PIPE              &kp LG(LS(D))      &kp LS(PERCENT)  &trans
+&kp Q              &kp W     &kp L             &kp Y             &kp P               &kp B                                         &kp Z     &kp M               &kp O                 &kp U              &kp SQT          &trans
+&trans             &kp C     &kp R             &kp S             &kp T               &kp G                                         &kp F     &kp N               &kp E                 &kp I              &kp A            &trans
+&trans             &kp Q     &kp J             &kp V             &kp D               &kp K        &kp DELETE          &kp CAPS     &kp X     &kp H               &kp FSLH              &kp COMMA          &kp DOT          &trans
+                             &kp LESS_THAN     &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &sl 6     &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
             >;
 
             display-name = "graphite";
