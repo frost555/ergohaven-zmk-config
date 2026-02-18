@@ -312,7 +312,7 @@
 &trans   &kp Q     &kp L          &kp Y             &kp P               &kp B                                         &kp X      &kp M               &kp O             &kp U              &kp SEMI         &trans
 &trans   &kp C     &kp R          &kp S             &kp T               &kp K                                         &kp GRAVE  &kp N               &kp E             &kp I              &kp A            &trans
 &trans   &kp W     &kp V          &kp G             &kp D               &kp Z        &kp DELETE          &kp CAPS     &kp J      &kp H               &trans            &trans             &trans           &trans
-                   &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &lt 6 F    &lt 5 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                   &kp LESS_THAN  &kp GREATER_THAN  &kp TAB             &lt 1 SPACE  &skq RIGHT_SHIFT    &lt 2 ENTER  &lt 7 F    &lt 6 SINGLE_QUOTE  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             display-name = "graphite";
